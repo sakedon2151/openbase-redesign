@@ -1,0 +1,501 @@
+/* ---------- style1 common ---------- */
+.stack{
+    width: 100%; height: 100vh;
+    transition: all 0.3s;
+    background-color: #fff;
+}
+.min-size{
+    min-width: 22.5rem;
+    min-height: 46.25rem;
+}
+.defaultBtn{
+    display: block;
+    text-align: center;
+    font: 1rem/3.75rem 'Pretendard';
+    color: #222;
+    width: 8.75rem; height: 3.75rem;
+    border-radius: .3125rem;
+    background-color: #fff;
+    transition: all 0.3s;
+    border: .0625rem solid #222;
+    box-sizing: border-box;
+}
+.defaultBtn:hover{
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    border-radius: 3.125rem;
+    border: none;
+}
+.defaultBtn:active{
+    background-color: #f5821f;
+    border: .0625rem solid #f5821f;
+    color: #fff;
+}
+
+
+
+/* ---------- section1 ---------- */
+#section1{}
+.s1-swiper{width: 100%; height: 100%;}
+.s1-swiper-wrapper{}
+.s1-slide{}
+.s1-1{
+    background: url(../img/s1/visual_1.png) no-repeat center/cover;
+    position: relative;
+    transition: all 0.5s;
+}
+.textbox1{
+    position: absolute;
+    bottom: 6.25rem; left: 3.125rem;
+    z-index: 10;
+}
+.textinnerbox{
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+.textinnerbox:nth-child(2){margin-bottom: 1.25rem;}
+.textinnerbox:nth-child(3){margin-bottom: 0rem;}
+.title1{
+    font: bold 3.75rem 'Pretendard';
+    color: #fff;
+    animation-delay: 0.5s;
+}
+.description1{
+    font: 1.5rem 'Pretendard';
+    color: #fff;
+    animation-delay: 1s;
+}
+.title1, .description1 {
+    animation: content-animation 4s 1 ease;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0.2;
+}
+@keyframes content-animation {
+    0% {
+        transform: translateY(30vh);
+        visibility: visible;
+        opacity: 0
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 0.8
+    }
+}
+.s1-2{
+    background: url(../img/s1/visual_2.jpg) no-repeat center/cover;
+    position: relative;
+    transition: all 0.5s;
+}
+.s1-3{
+    background: url(../img/s1/visual_6.png) no-repeat center/cover;
+    position: relative;
+    transition: all 0.5s;
+}
+
+
+
+/* ---------- section2 ---------- */
+#section2{}
+.s2-wrap{
+    position: relative;
+    display: flex;
+}
+.s2-left{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    margin-right: 2.5rem;
+}
+.s2-right{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+.s2-left-content{
+    position: absolute;
+    top: 50%;
+    transition: all 1s;
+    transform: translateY(0%);
+    opacity: 0;
+}
+.s2-right-content{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 50%; right: 0;
+    background: url(../img/s2/s2_laptop.jpg) no-repeat center/cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 1s;
+    transform: translateY(0%);
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+.introduce{margin-bottom: 3.125rem;}
+.introBox{margin-bottom: 3.125rem;}
+.introBold{
+    font: bold 2.75rem 'Pretendard';
+    display: inline;
+    color: #222;
+}
+.intro{
+    font: 2.75rem 'Pretendard';
+    display: inline;
+    color: #222;
+}
+.introText{
+    font: 1.25rem 'Pretendard';
+    color: #222;
+    margin-bottom: 0.9375rem;
+}
+.introText:last-child{margin-bottom: 0rem;}
+.intBtn{}
+/* section2 get active */
+#section2 .paraBox.active{
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+
+
+/* ---------- section3 ---------- */
+#section3{position: relative;}
+.s3-wrap{
+    position: relative;
+    height: 100%;
+}
+
+
+
+/* section3 title */
+.s3-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 9.375rem;
+}
+.solutionTitle{
+    font: bold 2.75rem 'Pretendard';
+    color: #222;
+}
+.solutionText{
+    font: 1.25rem 'Pretendard';
+    color: #222;
+}
+
+
+
+/* section3 content */
+.s3-content{}
+.cardWrap{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    perspective: 62.5rem;
+}
+.solutionCard{
+    width: 12.5rem; height: 12.5rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateY(100%);
+    transition: all 1s;
+    opacity: 0;
+}
+.sc1{transition-delay: 0.1s;}
+.sc2{transition-delay: 0.2s;}
+.sc3{transition-delay: 0.3s;}
+.sc4{transition-delay: 0.4s;}
+.sc5{transition-delay: 0.5s;}
+.front, .back{
+    width: 100%;
+    height: 12.5rem;
+    min-height: 12.5rem;
+    position: absolute;
+    top: 0; left: 0;
+    text-align: center;
+    transition: all 1s;
+    backface-visibility: hidden;
+    perspective: inherit;
+    transform-style: preserve-3d;
+}
+.front{
+    z-index: 1;
+    transform: rotateX(0) rotateY(0);
+    background: linear-gradient(180deg, #ffcc89, #f5821f);
+    border-radius: .3125rem;
+}
+.cardImg{
+    width: 6.25rem;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.back{
+    transform: rotateY(-180deg);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    border-radius: .3125rem;
+    animation: gradient 3s ease infinite;
+    background-size: 400% 400%;
+}
+.cardTitle{
+    font: 1.25rem/12.5rem 'Pretendard';
+    color: #fff;
+}
+.inner{}
+.solutionCard:hover{z-index: 20;}
+.solutionCard:hover .front{transform: rotateY(180deg);}
+.solutionCard:hover .back{
+    transform: rotateX(0) rotateY(0) scale(1.3);
+    z-index: 10;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.solBtn{
+    position: absolute;
+    top: 67.5%; left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+}
+.edu-wrap{
+    width: 100%; height: 9.375rem;
+    background: url(../img/s1/visual_3.jpg) no-repeat center/cover;
+    position: absolute;
+    bottom: 0; left: 0;
+    transform: translateY(100%);
+    transition: all 1s;
+    opacity: 0;
+}
+.eduVw{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eduText{
+    font: 1.25rem 'Pretendard';
+    color: #fff;
+    text-indent: 0.3125rem;
+}
+.eduBtn{}
+#section3 .paraBox.active{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+
+/* ---------- section4 ---------- */
+#section4{position: relative;}
+.s4-wrap{}
+.s4-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 9.375rem;
+}
+.recruitmentTitle{
+    font: bold 2.75rem 'Pretendard';
+    color: #222;
+}
+.recruitmentText{
+    font: 1.25rem 'Pretendard';
+    color: #222;
+}
+.s4-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+}
+.recWrap{display: flex;}
+.s4-left{
+    width: 50%; height: 25rem;
+    background: url(../img/s4/s4_meeting.jpg) no-repeat center/cover;
+    margin-right: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: translateY(100%);
+    transition: all 1s;
+    opacity: 0;
+}
+.s4-left-content{
+    width: 100%; height: 100%;
+    padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 20%, rgba(255, 255, 255, 0) 100%);
+}
+.s4-left:hover>.s4-left-content{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.singlebox{
+    position: relative;
+    width: 100%; height: 100%;
+}
+.singlebox>span{
+    font: bold 1rem 'Pretendard';
+    color: #fff;
+    position: absolute;
+    bottom: 8.75rem; left: 0;
+}
+.singlebox>h3{
+    font: 1.5rem 'Pretendard';
+    color: #fff;
+    position: absolute;
+    bottom: 3.125rem; left: 0;
+}
+.moreView{
+    display: inline-block;
+    position: absolute;
+    bottom: 0; left: 0;
+    font: .875rem 'Pretendard';
+    color: #fff;
+}
+.moreView>i{}
+.s4-right{
+    width: 50%; height: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: translateY(100%);
+    transition: all 1s;
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+.s4-right-content{
+    width: 100%; height: 100%;
+    background-color: #f5821f;
+}
+.postbox{
+    width: 100%; height: 33.4%;
+    padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+    box-sizing: border-box;
+}
+.postbox:nth-child(1){background-color: #ffa14f;}
+.postbox:nth-child(2){background-color: #f68f34;}
+.postbox:nth-child(3){background-color: #f5821f;}
+.postText{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.postText>span{
+    font: bold .875rem 'Pretendard';
+    color: #fff;
+    position: absolute;
+    top: 0; left: 0;
+}
+.postText>a:nth-child(2){
+    font: 1rem 'Pretendard';
+    color: #fff;
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+}
+.postText>p{
+    font: .875rem 'Pretendard';
+    color: #fff;
+    position: absolute;
+    bottom: 0; left: 0;
+}
+.morePlus{
+    display: inline-block;
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+.morePlus>i{
+    font-size: 2.75rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+.morePlus:hover>i{transform: rotate(180deg);}
+.recBtn{
+    position: absolute;
+    top: 84%; left: 50%;
+    transform: translateX(-50%);
+}
+#section4 .paraBox.active{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+
+/* ---------- section5 ---------- */
+#section5{position: relative;}
+.s5-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 9.375rem;
+}
+.newsTitle{
+    font: bold 2.75rem 'Pretendard';
+    color: #222;
+}
+.newBtn{}
+.s5-swiper{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+}
+.s5-swiper-wrapper{}
+.s5-slide{}
+.upperImg{
+    display: block;
+    width: 100%; height: 60%;
+    border-radius: 0.3125rem;
+    transition: all 0.3s;
+}
+.s5-slide:hover>.upperImg{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.lowerText{
+    display: block;
+    width: 100%; height: 30%;
+    position: relative;
+}
+.lowerText>h3{
+    position: absolute;
+    top: 1.25rem; left: 0;
+    font: 1.25rem 'Pretendard';
+    color: #222;
+}
+.lowerText>p{
+    position: absolute;
+    bottom: 2.5rem; left: 0;
+    font: 1rem 'Pretendard';
+    color: #222;
+}
+.s5-1>.upperImg{background: url(../img/s5/20230426015540.png) no-repeat center/cover;}
+.s5-2>.upperImg{background: url(../img/s5/20230413020634.jpg) no-repeat center/cover;}
+.s5-3>.upperImg{background: url(../img/s5/20230426020428.jpg) no-repeat center/cover;}
+.s5-4>.upperImg{background: url(../img/s5/20230404013210.jpg) no-repeat center/cover;}
+.s5-5>.upperImg{background: url(../img/s5/20230404012508.jpg) no-repeat center/cover;}
+.s5-6>.upperImg{background: url(../img/s5/20220218022720.jpg) no-repeat center/cover;}
+.s5-page{}
+.s5-page>.swiper-pagination-bullet{
+    width: 1.25rem; height: 1.25rem;
+    transition: all 0.3s;
+}
+.s5-page>.swiper-pagination-bullet-active{
+    width: 1.25rem; height: 0.625rem;
+    border-radius: 0.625rem;
+    background-color: #f5821f;
+}

@@ -1,0 +1,304 @@
+/* ********** mediaquery - 1280 ********** */
+@media screen and (max-width:1280px) {}
+
+/* ********** mediaquery - 1024 ********** */
+@media screen and (max-width:1024px) {
+    .s2-left-content{transform: translateY(-50%);}
+    .s2-right-content{transform: translateY(-50%);}
+    .solutionCard{transform: translateY(0%);}
+    .edu-wrap{transform: translateY(0%);}
+    .s4-left{transform: translateY(0%);}
+    .s4-right{transform: translateY(0%);}
+    /* section1 */
+    .textbox1{bottom: 3.125rem; left: 3.125rem;}
+    .title1{font: bold 2.5rem 'Pretendard';}
+    .description1{font: .875rem 'Pretendard';}
+    /* section2 */
+    #section2{position: relative;}
+    .s2-wrap{
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .s2-left{
+        width: 100%;
+        height: 21.875rem;
+        position: relative;
+        margin-right: 0rem;
+        margin-bottom: 1.25rem;
+    }
+    .s2-right{
+        width: 100%;
+        height: 21.875rem;
+        position: relative;
+    }
+    .s2-right-content{
+        height: 100%;
+        position: relative;
+    }
+    /* section3 */
+    #section3{position: relative;}
+    .s3-wrap{
+        position: relative;
+        height: 100%;
+    }
+    .s3-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 9.375rem;
+    }
+    .solutionTitle{font: bold 2.75rem 'Pretendard';}
+    .solutionText{
+        font: 1.25rem 'Pretendard';
+        text-align: center;
+    }
+    .s3-content{}
+    .cardWrap{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-60%);
+    }
+    .solutionCard{width: 9.375rem; height: 9.375rem;}
+    .front, .back{
+        height: 9.375rem;
+        min-height: 9.375rem;
+    }
+    .cardImg{width: 4.6875rem;}
+    .cardTitle{font: .875rem/9.375rem 'Pretendard';}
+    .solutionCard:hover .back{transform: rotateX(0) rotateY(0) scale(1.5);}
+    .solBtn{
+        position: absolute;
+        top: 67.5%; left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+    }
+    .edu-wrap{
+        width: 100%; height: 12.5rem;
+        background: url(../img/s1/visual_3.jpg) no-repeat center/cover;
+        position: absolute;
+        bottom: 0; left: 0;
+    }
+    .eduVw{
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .eduText{
+        font: 1rem 'Pretendard';
+        color: #fff;
+        text-indent: 0.3125rem;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    /* section4 */
+    #section4{position: relative;}
+    .s4-wrap{}
+    .s4-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 9.375rem;
+    }
+    .recruitmentTitle{font: bold 2.75rem 'Pretendard';}
+    .recruitmentText{
+        font: 1.25rem 'Pretendard';
+        text-align: center;
+    }
+    .s4-content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+    .recWrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .s4-left{
+        width: 100%;
+        height: 15.625rem;
+        background: url(../img/s4/s4_meeting.jpg) no-repeat center/cover;
+        margin-right: 2.5rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transform: translateY(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    .s4-left-content{
+        width: 100%; height: 100%;
+        padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+        box-sizing: border-box;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 20%, rgba(255, 255, 255, 0) 100%);
+    }
+    .s4-left:hover>.s4-left-content{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+    /* L box */
+    .singlebox{
+        position: relative;
+        width: 100%; height: 100%;
+    }
+    .singlebox>span{
+        font: bold 1rem 'Pretendard';
+        color: #fff;
+        position: absolute;
+        bottom: 8.75rem; left: 0;
+    }
+    .singlebox>h3{
+        font: 1.5rem 'Pretendard';
+        color: #fff;
+        position: absolute;
+        bottom: 3.125rem; left: 0;
+    }
+    .moreView{
+        display: inline-block;
+        position: absolute;
+        bottom: 0; left: 0;
+        font: .875rem 'Pretendard';
+        color: #fff;
+    }
+    .moreView>i{}
+    .s4-right{
+        width: 100%; height: 15.625rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transform: translateY(100%);
+        transition: all 1s;
+        transition-delay: 0.5s;
+        opacity: 0;
+    }
+    .s4-right-content{
+        width: 100%; height: 100%;
+        background-color: #f5821f;
+    }
+    /* R box */
+    .postbox{
+        width: 100%; height: 33.4%;
+        padding: .625rem 2.5rem .625rem 2.5rem;
+        box-sizing: border-box;
+    }
+    .postbox:nth-child(1){background-color: #ffa14f;}
+    .postbox:nth-child(2){background-color: #f68f34;}
+    .postbox:nth-child(3){background-color: #f5821f;}
+    .postText{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .postText>span{
+        font: bold .875rem 'Pretendard';
+        color: #fff;
+        position: absolute;
+        top: 0; left: 0;
+    }
+    .postText>a:nth-child(2){
+        font: .875rem 'Pretendard';
+        color: #fff;
+        position: absolute;
+        top: 50%; left: 0;
+        transform: translateY(-50%);
+    }
+    .postText>p{
+        font: .875rem 'Pretendard';
+        color: #fff;
+        position: absolute;
+        bottom: 0; left: 0;
+    }
+    .morePlus{
+        display: inline-block;
+        position: absolute;
+        top: 50%; right: 0;
+        transform: translateY(-50%);
+    }
+    .morePlus>i{
+        font-size: 2.75rem;
+        color: #fff;
+        transition: all 0.3s;
+    }
+    .morePlus:hover>i{transform: rotate(180deg);}
+    .recBtn{
+        position: absolute;
+        top: 84%; left: 50%;
+        transform: translateX(-50%);
+    }
+    /* section5 */
+}
+
+/* ********** mediaquery - 768 ********** */
+@media screen and (max-width:768px) {
+    /* section1 */
+    .textbox1{bottom: 3.125rem; left: 1.25rem;}
+    /* section2 */
+    .introBold{font: bold 1.625rem 'Pretendard';}
+    .intro{
+        font: 1.625rem 'Pretendard';
+        display: inline;
+        color: #222;
+    }
+    .introText{
+        font: 1rem 'Pretendard';
+        color: #222;
+        margin-bottom: 0.9375rem;
+    }
+    /* section3 */
+    .cardWrap{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-70%);
+    }
+    .solutionCard{
+        width: 6.25rem; height: 6.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .front, .back{
+        height: 6.25rem;
+        min-height: 6.25rem;
+    }
+    .cardImg{width: 3.125rem;}
+    .cardTitle{font: .875rem/6.25rem 'Pretendard';}
+    /* section4 */
+    .s4-left{
+        width: 100%;
+        height: 15.625rem;
+        background: url(../img/s4/s4_meeting.jpg) no-repeat center/cover;
+        margin-right: 2.5rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        margin-bottom: 1.25rem;
+    }
+    .postbox{
+        width: 100%; height: 33.4%;
+        padding: .625rem 1.25rem .625rem 1.25rem;
+        box-sizing: border-box;
+    }
+    /* section5 */
+    .s5-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 9.375rem;
+    }
+    .newsTitle{
+        font: bold 2.75rem 'Pretendard';
+        color: #222;
+    }
+    .newBtn{}
+}
+
+/* ********** mediaquery - 360 ********** */
+@media screen and (max-width:360px) {}

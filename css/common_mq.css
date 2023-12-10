@@ -1,0 +1,39 @@
+/* ********** mediaquery - 1280 ********** */
+@media screen and (max-width:1280px) {
+    html{font-size: .875rem;}
+    #logo {margin-left: 0rem;}
+    #switch {margin-right: 0rem;}
+}
+
+/* ********** mediaquery - 1024 ********** */
+@media screen and (max-width:1024px) {
+    /* disable area */
+    #header {display: none;}
+    #fp_nav {display: none;}
+    #live_chat{display: none;}
+    /* enable area */
+    #m_header {display: flex;}
+    /* footer */
+    #footer.stack{height: auto;}
+    .f_menu{display: none;}
+    .f_etc_right{display: none;}
+    /* footer center */
+    .address{text-align: center;}
+    .copy{text-align: center;}
+    .etc_menu{text-align: center;}
+}
+
+/* ********** mediaquery - 768 ********** */
+@media screen and (max-width:768px) {
+    /* mobile - 12px size */
+    html{font-size: .75rem;}
+    /* header margin disable */
+    #m_logo{margin-left: 0rem;}
+    #m_menu{margin-right: 0rem;}
+    .etc_menu>a {margin: 0rem;}
+}
+
+/* ********** mediaquery - 360 ********** */
+@media screen and (max-width:360px) {
+    .m_br_e{display: block;}
+}
